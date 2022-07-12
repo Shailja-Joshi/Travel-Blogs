@@ -1,36 +1,139 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: Century Gothic;
-
 }
-header{
-	background-image: url(1.jpg);
-	height :100vh; 
-	background-size: cover;
-	background-position: center;
+:root{
+    --navbar-height:59px;
 }
-h1{
-	font-size: 100px;
-	color: #fff;
+/*navigation bar*/
+#navbar{
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 0px;
 }
-
-ul{
-	float: right;
-	list-style-type: none;
-    margin-top: 25px;
+#navbar ul{
+	display: flex;
 }
-ul li
-{
-	display: inline-block;
+#navbar ul li{
+	list-style: none;
+    font-size: 1.3rem;
 }
-ul li a{
+#navbar ul li a{
+	padding: 3px 20px;
+	margin: 20px;
+	display: block;
 	text-decoration: none;
-	color: #fff;
-	padding: 5px 20px;
-	border: 1px solid #fff;
+	color: lightcyan;
 }
- ul li a:hover{
-   background-color: #fff;
-   color: #000;
- }
+#navbar::before{
+	content: "";
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	opacity: 0.4;
+	z-index: -1;
+	position: absolute;
+	
+}
+#navbar ul li a:hover{
+	color: black;
+	background-color: white;
+	border-radius: 20px;
+}
+/*logo image*/
+#logo{
+	margin: 5px 5px;
+}
+#logo img{
+	margin: 4px 5px;
+	height: 30px;
+}
+
+#home{
+	display: flex;
+	padding: 3px 20px;
+	flex-direction: column;
+	height: 550px;
+	align-items: center;
+	justify-content: center;
+	
+	
+}
+#home::before{
+	z-index: -1;
+	opacity: 0.6;
+	content: "";
+    top: 0px;
+	left: 0px;
+    height: 100%;
+    width: 100%;
+    background: url('./1.jpg') no-repeat center center/cover;
+	color: black;
+	position: absolute;
+}
+#home h1{
+	color: black;
+	font-family: 'Arima', cursive;
+}
+#home h3{
+	color: white;
+	font-family: 'Arima', cursive;
+	font-size: 1.9rem;
+}
+#dropdown{
+	padding: 50px 70px;
+   display: flex;
+   flex-direction: column;
+}
+.h-primary{
+	
+	font-size: 2.7rem;
+}
+#places{
+	font-family: 'Arima', cursive;
+    color: brown;
+    border-block-color: inherit;
+    background-color: peachpuff;
+    font-size: 20px;
+}
+.places-hover{
+	background-color: lightcyan;
+}
+.bg-img-title{
+	font-size: 2.5rem;
+	padding: 20px 20px;
+	text-align: center;
+}
+
+
+#ramnagar-home{
+	text-align: center;
+	padding: 20px 20px;
+	margin: 2px 2px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#ramnagar-home::before{
+	background: url('/places/ramnagar2.jpg') no-repeat center center/cover;
+	opacity: 0.4;
+	z-index: -1;
+	opacity: 0.4;
+	content: "";
+    top: 0px;
+	left: 0px;
+    height: 100%;
+    width: 100%;
+	position: absolute;
+
+}
+#ramnagar-home p{
+	font-size: 1.4rem;
+	margin: 3px 6px;
+	padding: 20px 20px;
+}
+#ramnagar-home h3{
+	font-size: 1.5rem;
+}
