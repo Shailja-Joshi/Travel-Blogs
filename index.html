@@ -4,23 +4,39 @@
 	<title>Travel Blogs</title>
 	<!--<link rel="stylesheet" type="text/css" href="./website/css/website.css">-->
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav id="navbar">
+		<div id="logo">
+			<img src='1.jpg' alt="logo">
+		</div>
+		<ul>
+			<li class="item"><a href="./index.html"> Home</a></li>
+			<li class="item"><a href="#">About Us</a></li>
+			<li class="item"><a href="#">Contact Us</a></li>
+			
+		</ul>
+	</nav>
+	
+	<section id="home">
+		
+		<h1 class="h-primary">Welcome to "MyTravelBlogs"</h1>
+		<section id="dropdown">
+		<h3>Choose a blog post:</h3>
+		<select name="places" id="places" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+			
+			<option  value="/index.html">Places</option>
+			<option   value="/places/manali.html">Manali</option>
+			<option class="places-hover"  value="/places/ramnagar.html">Ramnagar</option>
+			<option class="places-hover"  value="/places/shimla.html">Shimla</option>
+			<option class="places-hover"  value="/places/nainital.html">Nainital</option>
+			<option class="places-hover"  value="/places/pithoragarh.html">Pithoragarh</option>
+		  </select>
+		</section>
+	</section>
 
-     <header>
-          <h1>Travel Blogs</h1>
-     	<div class="main">
-     		
-     		<ul>
-     			
- 				<li><a href="places/nainital.html"> Nainital</a></li>
- 				<li><a href="places/shimla.html">Shimla</a></li>
- 				<li><a href="places/manali.html">Manali</a></li>
-                    <li><a href="places/pithoragarh.html"> Pithoragarh</a></li>	
-                    <li><a href="places/ramnagar.html"> Ramnagar</a></li>
-
-     		</ul>
-     	</div>
-     </header>
 </body>
 </html>
